@@ -56,26 +56,20 @@ footer{
     color:white;
     padding:20px;
     margin-top:30px;
-}header h1 {
-    font-size: 36px;
-    margin: 0;
-}
 
-header p {
-    font-size: 20px;
-}
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
-    }
-
-    header p {
-        font-size: 16px;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-}
-    
+59 }
+60 header h1 {
+61     font-size: clamp(28px, 6vw, 52px);
+62     line-height: 1.2;
+63     margin: 0;
+64     word-break: break-word;
+65 }
+66
+67 header p {
+68     font-size: clamp(16px, 3vw, 22px);
+69     margin-top: 15px;
+70 }
+71
+72 header {
+73     padding: 30px 15px;
+74 }
